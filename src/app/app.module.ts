@@ -3,10 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent  } from './app.component';
+import { HomeComponent } from './module/home/home.component';
+import { LoginComponent } from './auth/login/login.component';
+import { ConfirmBoxComponent } from './views/confirm-box/confirm-box.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    ConfirmBoxComponent 
   ],
   imports: [
     BrowserModule,
