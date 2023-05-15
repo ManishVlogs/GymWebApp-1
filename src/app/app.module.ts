@@ -8,12 +8,13 @@ import { LoginComponent } from './auth/login/login.component';
 import { ConfirmBoxComponent } from './views/confirm-box/confirm-box.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    ConfirmBoxComponent 
+    ConfirmBoxComponent
   ],
   imports: [
     BrowserModule,
