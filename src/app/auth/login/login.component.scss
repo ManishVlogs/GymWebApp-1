@@ -1,0 +1,171 @@
+.login-container {
+    // background-image: url('../../../assets/images/gym.jfif');
+    background-image: url('../../../assets/images/gym.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9; 
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px; /* Adjust the width as needed */
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  // .form-row {
+    // display: flex;
+    // align-items: center;
+    // margin-bottom: 10px;
+    // margin-left: auto;
+
+  // }
+  
+  .form-row label {
+    width: 100px; /* Adjust the width as needed */
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .form-row input[type="text"] {
+    flex: 1;
+  }
+  .single-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .column-container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .column:last-child {
+    margin-right: 0;
+  }
+
+  .row-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .row {
+    flex: 1;
+    padding: 10px;
+    // border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .row:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .login-containercdc {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  input {
+    flex: 1;
+  }
+  
+  .centered-h2 {
+    text-align: center;
+    // background-color: 
+    color: #1b5fa7e0;
+  }
+  
+  .left-image {
+    display:block;
+    width: 50px; /* Adjust the width as needed */
+    // height: auto;
+    margin-right: 0px; /* Adjust the margin as needed */
+    // height:"40px" 
+  
+  }
+
+  .container1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heading {
+    // margin-right: auto; /* Adjust the margin as needed */
+    margin-left: 40px;
+  }
+  

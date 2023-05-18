@@ -1,19 +1,35 @@
-<!-- login.component.html -->
-<div>
-    <h2>Login</h2>
-    <form (ngSubmit)="login()">
-      <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username"  name="username" required>
+<div class="login-container">
+  <div class="login-form">
+    <div class="container1">
+      <img src="../../../assets/images/logo4.PNG" height="40px" alt="Image" class="image">
+      <h2 class="heading">Gym Management</h2>
+    </div>
+
+    <form>
+      <div class="row">
+
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email" required>
       </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password"  name="password" required>
+
+      <div class="row">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
       </div>
-      <div>
-        <button type="submit">Login</button>
+      <div class="row">
+        <label for="password">User Role</label>
+        <select class="form-control" style="width: 226px;">
+          <option value=null>-- Select Role --</option>
+          <option value=1>Admin</option>
+          <option value=2>Trainer</option>
+          <option value=3>Member</option>
+        </select>
       </div>
+
+
+
+
+      <button type="submit" class="btn btn-primary">LOGIN</button>
     </form>
   </div>
-  <!-- <router-outlet></router-outlet> -->
-  
+</div>
