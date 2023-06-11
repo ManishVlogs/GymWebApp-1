@@ -12,6 +12,9 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { LeftmenuComponent } from './shared/components/leftmenu/leftmenu.component';
 import { SiteLayoutComponent } from './shared/components/site-layout/site-layout.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ApiConstant } from './services/pipes/global/api-constant';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +26,17 @@ import { SiteLayoutComponent } from './shared/components/site-layout/site-layout
     HeaderComponent,
     FooterComponent,
     LeftmenuComponent,
-    SiteLayoutComponent 
+    SiteLayoutComponent ,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+   
+
   ],
-  providers: [],
+  providers: [ApiConstant],
   bootstrap: [AppComponent]
 }) 
 export class AppModule { }

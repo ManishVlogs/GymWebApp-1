@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<header>
+  <div class="logo">
+    <!-- Replace the following line with your logo image or text -->
+    <img src="../../../assets/images/logo4.PNG" height="40px" alt="Image" alt="Logo" />
+  </div>
+  <nav>
+    <ul>
+      <li *ngFor="let link of navLinks">
+        <a [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
