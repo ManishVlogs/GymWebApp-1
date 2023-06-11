@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
+  navLinks = [
+    { label: 'CLASSES', path: '/home' },
+    { label: 'MEMBERSHIP', path: '/about' },
+    { label: 'PERSONAL TRAINNG', path: '/services' },
+    { label: 'BLOG', path: '/services' },
+    { label: 'CONTACT', path: '/contact' }
+  ];
   constructor() { }
 
   ngOnInit(): void {

@@ -12,8 +12,15 @@ export class LoginServiceService {
   constructor(protected http: HttpClient, private ApiEndPoints: ApiConstant) { }
   Base_URL = environment.apiUrl;
 
-  public AuthenticateUser(login: any): Observable<any> {
-     return this.http.post(`${this.Base_URL}` + `${this.ApiEndPoints.Login.AuthenticateUser}`, login);
+  public GetTestApi(var1:any,var2:any): Observable<any> {
+    console.log(`${this.Base_URL}` + `${this.ApiEndPoints.Login.GetTestApi}`+var1+'&var2='+var2);
+     return this.http.get(`${this.Base_URL}` + `${this.ApiEndPoints.Login.GetTestApi}`+var1+'&var2='+var2);
+    
+  }
+
+  public GetTestApi2(var1:any,var2:any): Observable<any> {
+    console.log(`${this.Base_URL}` + `${this.ApiEndPoints.Login.GetTestApi2}`+var1+'&var2='+var2);
+     return this.http.get(`${this.Base_URL}` + `${this.ApiEndPoints.Login.GetTestApi2}`+var1+'&var2='+var2);
     
   }
 
