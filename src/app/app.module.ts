@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent  } from './app.component';
 import { HomeComponent } from './module/home/home.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -14,6 +14,8 @@ import { LeftmenuComponent } from './shared/components/leftmenu/leftmenu.compone
 import { SiteLayoutComponent } from './shared/components/site-layout/site-layout.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiConstant } from './services/pipes/global/api-constant';
+import { AppRoutingModule } from 'src/app.routing.module';
+import { routing } from './app-routing';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { ApiConstant } from './services/pipes/global/api-constant';
   ],
   imports: [
     BrowserModule,
+    routing,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
