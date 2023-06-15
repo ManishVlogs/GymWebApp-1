@@ -11,7 +11,8 @@ export class HeaderComponent implements OnInit {
     { label: 'MEMBERSHIP', path: '/about' },
     { label: 'PERSONAL TRAINNG', path: '/services' },
     { label: 'BLOG', path: '/services' },
-    { label: 'CONTACT', path: '/contact' }
+    { label: 'CONTACT', path: '/contact' },
+    { label: 'GALLERY', path: '/gallery' }
   ];
   constructor() { }
 

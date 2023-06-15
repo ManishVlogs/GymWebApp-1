@@ -16,7 +16,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiConstant } from './services/pipes/global/api-constant';
 import { AppRoutingModule } from 'src/app.routing.module';
 import { routing } from './app-routing';
-
+import { GalleryComponent } from './module/gallery/gallery.component';
+import { AboutusComponent } from './module/aboutus/aboutus.component';
+// import { SlickCarouselModule  } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { routing } from './app-routing';
     HeaderComponent,
     FooterComponent,
     LeftmenuComponent,
-    SiteLayoutComponent ,
+    SiteLayoutComponent,
+    GalleryComponent,
+    AboutusComponent ,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,7 @@ import { routing } from './app-routing';
     AppRoutingModule,
     FormsModule,
     HttpClientModule
-   
+    // SlickCarouselModule
 
   ],
   providers: [ApiConstant],
